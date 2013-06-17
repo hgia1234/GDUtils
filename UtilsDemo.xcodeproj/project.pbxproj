@@ -19,6 +19,7 @@
 		0755AB3B176F0EDE007AAD54 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0755AB3A176F0EDE007AAD54 /* GDViewController.m */; };
 		0755AB3E176F0EDE007AAD54 /* GDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0755AB3C176F0EDE007AAD54 /* GDViewController.xib */; };
 		0755AB48176F0F39007AAD54 /* GDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0755AB47176F0F39007AAD54 /* GDUtils.m */; };
+		0755AB4B176F4DFF007AAD54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0755AB4A176F4DFF007AAD54 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0755AB3D176F0EDE007AAD54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GDViewController.xib; sourceTree = "<group>"; };
 		0755AB46176F0F39007AAD54 /* GDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUtils.h; sourceTree = "<group>"; };
 		0755AB47176F0F39007AAD54 /* GDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUtils.m; sourceTree = "<group>"; };
+		0755AB4A176F4DFF007AAD54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0755AB4B176F4DFF007AAD54 /* QuartzCore.framework in Frameworks */,
 				0755AB22176F0EDE007AAD54 /* UIKit.framework in Frameworks */,
 				0755AB24176F0EDE007AAD54 /* Foundation.framework in Frameworks */,
 				0755AB26176F0EDE007AAD54 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		0755AB20176F0EDE007AAD54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0755AB4A176F4DFF007AAD54 /* QuartzCore.framework */,
 				0755AB21176F0EDE007AAD54 /* UIKit.framework */,
 				0755AB23176F0EDE007AAD54 /* Foundation.framework */,
 				0755AB25176F0EDE007AAD54 /* CoreGraphics.framework */,
@@ -313,6 +317,7 @@
 				0755AB43176F0EDE007AAD54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
