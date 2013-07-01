@@ -37,7 +37,7 @@ extern CGPoint CGPointSetY(CGPoint point, CGFloat y);
 
 + (id) loadNIB:(NSString*)file;
 + (NSString *)hexadecimalStringFromData:(NSData *)data;
-
++ (UIColor *)colorWithHexString:(NSString *)string;
 + (NSString *)writePNGImageToDocumentFolder:(UIImage *)image name:(NSString *)name;
 
 + (NSString *)pathToFileInDocumentFolder:(NSString *)fileName;
