@@ -20,6 +20,13 @@
 
 #endif
 
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
 extern CGRect CGRectSetX(CGRect rect, CGFloat x);
 extern CGRect CGRectSetY(CGRect rect, CGFloat y);
 extern CGRect CGRectSetWidth(CGRect rect, CGFloat width);
@@ -37,7 +44,7 @@ extern CGPoint CGPointSetY(CGPoint point, CGFloat y);
 
 + (id) loadNIB:(NSString*)file;
 + (NSString *)hexadecimalStringFromData:(NSData *)data;
-+ (UIColor *)colorWithHexString:(NSString *)string;
+
 + (NSString *)writePNGImageToDocumentFolder:(UIImage *)image name:(NSString *)name;
 
 + (NSString *)pathToFileInDocumentFolder:(NSString *)fileName;
@@ -69,6 +76,7 @@ extern CGPoint CGPointSetY(CGPoint point, CGFloat y);
 + (UIImage *)rotate90DegreeImage:(UIImage *)image multiply:(int)multiply;
 
 + (CGRect)frameForView:(UIView *)view underView:(UIView *)aboveView;
++ (CGRect)frameForView:(UIView *)view underView:(UIView *)aboveView padding:(float)padding;
 + (UIView *)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view;
 
 + (CGRect)frameForSuperView:(UIView *)view contentView:(UIView *)contentView insets:(UIEdgeInsets)insets;
